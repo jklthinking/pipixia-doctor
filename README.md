@@ -1,6 +1,5 @@
-# 皮皮虾医生（OpenClaw Doctor）v5.1
+# 皮皮虾医生v5.1
 
-> 合并自 openclaw-doctor v4.0 + hermes-doctor v0.1.1
 > 版本: 5.1.0 | 品牌: AtomCollide-智械工坊
 > 发布日期: 2026-06-20
 
@@ -83,7 +82,7 @@ python3 scripts/rx_learner.py --target . --mode report
 | 改进 | 来源 |
 |------|------|
 | 统一 CLI (`doctor.py`): check/match/plan/record/search/route/validate/test/snapshot/learn | hermes-doctor + v5.1 |
-| OpenClaw 深度检查: 系统负载/HEARTBEAT体积/memory/heartbeat文件数/Skill完整性 | 审计发现 |
+| Agent 深度检查: 系统负载/HEARTBEAT体积/memory/heartbeat文件数/Skill完整性 | 审计发现 |
 | 系统资源检测: load average, 磁盘提示 | 审计发现 |
 | 药方库合并: 90+ 药方 | 双源合并 |
 | 包装器: bailongma-doctor (Unix + Windows) | hermes-doctor |

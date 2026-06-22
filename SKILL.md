@@ -1,14 +1,14 @@
 ---
-name: openclaw-doctor
-description: 皮皮虾医生 v5.1 — OpenClaw Agent 自诊断与安全自愈插件。支持体检、看看状态、报错了、出问题了、帮我修一下、自诊断、自愈、药方库、排查、问题排查、系统体检、快速检查、维护、修复指导、诊断报告、安全修复、健康报告、开药方、故障排查、病历搜索、消息路由、Agent快照、数字遗产、复活、药方自学习。
+name: pipixia-doctor
+description: 皮皮虾医生 v5.1 — Agent 自诊断与安全自愈插件。支持体检、看看状态、报错了、出问题了、帮我修一下、自诊断、自愈、药方库、排查、问题排查、系统体检、快速检查、维护、修复指导、诊断报告、安全修复、健康报告、开药方、故障排查、病历搜索、消息路由、Agent快照、数字遗产、复活、药方自学习。
 version: 5.1.0
 author: 小乖（李渔樵团队）
-tags: [openclaw, doctor, diagnosis, self-healing, agent, health-check, prescription]
+tags: [doctor, diagnosis, self-healing, agent, health-check, prescription]
 requires_tools: [read_file, write_file, edit, exec, search_files]
 requires_toolsets: [file, terminal]
 ---
 
-# 皮皮虾医生（OpenClaw Doctor）v5.1
+# 皮皮虾医生v5.1
 
 皮皮虾医生是一个面向小白用户的 Agent 自诊断与安全自愈 Skill。不是直接替用户乱修，而是先体检、再分诊、开药方，最后按风险等级确认修复。
 
@@ -77,7 +77,7 @@ python3 scripts/run_tests.py
 ## 目录结构
 
 ```
-openclaw-doctor/
+pipixia-doctor/
 ├── SKILL.md                       # 主入口（本文件）
 ├── README.md                      # 快速开始
 ├── USER_MANUAL.md                 # 小白用户手册
