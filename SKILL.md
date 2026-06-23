@@ -6,6 +6,12 @@ author: 小乖（李渔樵团队）
 tags: [doctor, diagnosis, self-healing, agent, health-check, prescription]
 requires_tools: [read_file, write_file, edit, exec, search_files]
 requires_toolsets: [file, terminal]
+
+triggers:
+  - 智能体健康
+  - Agent诊断
+  - pipixia
+  - 皮皮虾
 ---
 
 # 皮皮虾医生v5.1
