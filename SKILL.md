@@ -1,6 +1,6 @@
 ---
 name: pipixia-doctor
-description: 皮皮虾医生 v5.1 — Agent 自诊断与安全自愈插件。支持体检、看看状态、报错了、出问题了、帮我修一下、自诊断、自愈、药方库、排查、问题排查、系统体检、快速检查、维护、修复指导、诊断报告、安全修复、健康报告、开药方、故障排查、病历搜索、消息路由、Agent快照、数字遗产、复活、药方自学习。
+description: "OpenClaw Agent数字遗产+永恒记忆+复活系统。独立产品，与白龙马医生为同领域不同平台。当需要管理Agent数字遗产、配置永恒记忆、实现Agent复活时使用。"
 version: 5.1.0
 author: 小乖（李渔樵团队）
 tags: [doctor, diagnosis, self-healing, agent, health-check, prescription]
