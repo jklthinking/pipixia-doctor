@@ -982,6 +982,11 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def main() -> int:
+    # One-click friendliness: running `python3 scripts/doctor.py` with no
+    # subcommand should perform the safe read-only health check instead of
+    # failing with argparse usage text.
+    if len(sys.argv) == 1:
+        sys.argv.extend(["check", "--target", ".", "--format", "markdown"])
     parser = build_parser()
     args = parser.parse_args()
     return args.func(args)
