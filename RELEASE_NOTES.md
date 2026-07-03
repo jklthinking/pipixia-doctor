@@ -33,8 +33,7 @@
 
 # 皮皮虾医生 v5.0 Release Notes (历史)
 
-> 合并自 openclaw-doctor v4.0 + hermes-doctor v0.1.1
-> 发布日期: 2026-06-19
+> > 发布日期: 2026-06-19
 
 ## 重大更新
 

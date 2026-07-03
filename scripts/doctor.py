@@ -2,10 +2,6 @@
 """
 皮皮虾医生（OpenClaw Doctor）v5.0 — 统一 CLI 入口
 
-合并自:
-  - openclaw-doctor v4.0 (本地多脚本)
-  - hermes-doctor v0.1.1 (Hermes 统一 CLI 框架)
-
 结构: 统一 CLI (doctor.py) + 15 个专用脚本 + bailongma-doctor 包装器
 使用方法:
   python3 doctor.py check --target . --format markdown

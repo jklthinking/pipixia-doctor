@@ -5,8 +5,7 @@
 ## [5.0.0] - 2026-06-19
 
 ### 重大变更
-- **统一 CLI 入口** `scripts/doctor.py`：8 个核心命令（check / match / plan / record / search / route / validate / test），合并自 openclaw-doctor v4.0 + hermes-doctor v0.1.1
-- **药方库合并**：73+（v4.0）+ 20（v0.1.1）→ 36 条精选
+- **统一 CLI 入口** `scripts/doctor.py`：8 个核心命令（check / match / plan / record / search / route / validate / test），- **药方库合并**：73+（v4.0）+ 20（v0.1.1）→ 36 条精选
 
 ### 新增
 - 系统负载检测（load average）

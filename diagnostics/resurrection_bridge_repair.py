@@ -1,4 +1,4 @@
-"""Repair playbook selection for Lark coding-agent bridge failures."""
+"""Repair playbook selection for PipiXia resurrection handoff failures."""
 from __future__ import annotations
 from dataclasses import dataclass
 

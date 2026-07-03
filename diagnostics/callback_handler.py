@@ -1,6 +1,6 @@
 """Callback Handler - 回调处理器
 
-融合自 dify 的 core/callback_handler/ 模块。
+
 提供 Agent 工具调用的回调追踪和调试输出。
 """
 
@@ -33,8 +33,7 @@ class ToolCallRecord:
 class CallbackHandler:
     """Agent 回调处理器
     
-    融合自 dify 的 DifyAgentCallbackHandler，提供：
-    - 工具调用开始/结束/错误回调
+        - 工具调用开始/结束/错误回调
     - Agent 循环追踪
     - 调试输出（带颜色）
     - 调用历史记录

@@ -1,4 +1,4 @@
-"""Repair planning for generic orchestration runtimes."""
+"""Recovery planning for PipiXia legacy profile resurrection workflows."""
 from __future__ import annotations
 
 from dataclasses import dataclass

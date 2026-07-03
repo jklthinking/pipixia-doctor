@@ -1,6 +1,6 @@
 """Agent Monitor - Agent 监控仪表板
 
-融合自 dify 的 agent monitoring 模块 (web/features/agent-v2/agent-detail/monitoring/)。
+
 提供 Agent 运行时指标收集、统计和可视化数据。
 """
 
@@ -77,8 +77,7 @@ class AgentMetrics:
 class AgentMonitor:
     """Agent 监控器
     
-    融合自 dify 的 Agent 监控仪表板，提供：
-    - 调用统计（总数、成功、失败）
+        - 调用统计（总数、成功、失败）
     - 延迟追踪（min, max, avg, p50, p95, p99）
     - Token 使用统计
     - 工具调用监控

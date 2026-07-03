@@ -1,4 +1,4 @@
-from diagnostics.orchestration_repair_plan import repair_plan, requires_human_approval
+from diagnostics.legacy_recovery_plan import repair_plan, requires_human_approval
 
 
 def test_repair_plan_deduplicates_and_marks_unsafe_steps():
