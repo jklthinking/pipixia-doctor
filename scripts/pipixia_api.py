@@ -13,6 +13,7 @@ from pathlib import Path
 from hashlib import sha1
 
 from pipixia_history_store import latest_runs, store_run
+from mem0_bridge import collect_mem0_records
 
 try:
     from fastapi import FastAPI
@@ -67,6 +68,13 @@ def create_app() -> "FastAPI":
     @app.get("/diag/latest")
     def diag_latest(limit: int = 10):
         return latest_runs(limit=limit, db_path=DB_PATH)
+
+    @app.get("/diag/mem0")
+    def diag_mem0(limit: int = 20):
+        return {
+            "provider": "pipixia-doctor",
+            "memory": collect_mem0_records(limit=limit, db_path=DB_PATH),
+        }
 
     return app
 

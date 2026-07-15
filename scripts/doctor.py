@@ -281,6 +281,29 @@ def check_openclaw_environment(target: Path) -> tuple[list[Finding], list[str]]:
             if hb_count > 80:
                 findings.append(Finding("warn", f"memory/heartbeat/ 有 {hb_count} 个文件（超过阈值80）", str(hb_mem_dir), "持续WARN多轮，需清理。", "RX-MEM-002", "L1", "清理超过30天的历史心跳记录。"))
 
+    # --- mem0 bridge smoke check ---
+    bridge = target / "scripts" / "mem0_bridge.py"
+    if bridge.exists():
+        try:
+            subprocess.check_call(
+                [
+                    "python3",
+                    str(bridge),
+                    "--target",
+                    str(target),
+                    "--limit",
+                    "5",
+                    "--json",
+                ],
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
+            )
+            passed.append("mem0 兼容导出检查通过")
+        except Exception:
+            findings.append(Finding("warn", "mem0 compatibility bridge 异常", str(bridge), "需要进一步排查记忆持久化路径。", "RX-MEM-004", "L2", "先执行 python3 scripts/mem0_bridge.py --json。"))
+    else:
+        findings.append(Finding("warn", "缺失 scripts/mem0_bridge.py", str(bridge), "不能直接导出 mem0 格式记忆。", "RX-MEM-004", "L2", "补充 scripts/mem0_bridge.py。"))
+
     if (target / "MEMORY.md").exists():
         mem_size = (target / "MEMORY.md").stat().st_size
         if mem_size > 30000:

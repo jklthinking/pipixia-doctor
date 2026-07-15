@@ -20,6 +20,7 @@
   "policy": "Cross-cutting runtime/bridge/workflow modules must be domain-mapped and referenced by declared entrypoints or smoke targets; generic orphan modules fail the convergence gate.",
   "domain_mappings": {
     "diagnostics/legacy_recovery_plan.py": "PipiXia legacy profile resurrection recovery plans",
-    "diagnostics/resurrection_bridge_repair.py": "PipiXia resurrection handoff repair advisories"
+    "diagnostics/resurrection_bridge_repair.py": "PipiXia resurrection handoff repair advisories",
+    "scripts/mem0_bridge.py": "Mem0-compatible history export bridge for doctor state"
   }
 }
