@@ -148,8 +148,23 @@ pipixia-doctor/
 - 新增 `scripts/product_convergence_gate.py`：从远端干净 clone 后可运行 `python3 scripts/product_convergence_gate.py --json`，检查 SKILL/README、入口文件、smoke 目标、测试与外部融合引用是否自洽。
 - 新增 `tests/test_product_convergence_gate.py`：确保门禁在产品仓库中真实可执行，避免后续增强只停留在孤岛模块。
 
+## 一键开箱交付
+
+本仓库提供标准一键入口：
+
+- `install.sh`：用户的一条命令安装与冒烟入口。
+- `scripts/setup.py`：安装声明依赖并串联 doctor。
+- `scripts/doctor.py`：检查 README、SKILL、入口脚本、package scripts 与产品收敛门禁。
+- `scripts/smoke.py`：运行 doctor、产品收敛门禁与 Python 编译级冒烟。
+- `tests/test_one_click_open_box.py`：契约测试，防止 README 写了但脚本缺失。
 
 
-## 详细文档
+## Lark Coding Agent Bridge 融合增强
 
-完整内容见 `references/full-skill.md`。
+- 皮皮虾医生新增 Bridge Repair Advisor：stream idle、workspace missing、Codex JSONL drift、profile crosstalk 修复建议。
+- 新增模块：`diagnostics/resurrection_bridge_repair.py`
+- 来源模式：飞书/Lark 消息入口、本地 Claude/Codex 执行、会话 fingerprint、profile 隔离与安全门禁。
+
+## Generic orchestration repair plans
+
+Adds deterministic repair planning for drift, stale pending events, poison events, missing flow logs, and broken confirmation states.
