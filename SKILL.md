@@ -1,12 +1,10 @@
 ---
 name: pipixia-doctor
 description: "OpenClaw Agent数字遗产+永恒记忆+复活系统。独立产品，与白龙马医生为同领域不同平台。当需要管理Agent数字遗产、配置永恒记忆、实现Agent复活时使用。"
-version: 1.2.0
-author: 小乖（李渔樵团队）
-tags: [doctor, diagnosis, self-healing, agent, health-check, prescription]
-requires_tools: [read_file, write_file, edit, exec, search_files]
-requires_toolsets: [file, terminal]
-
+license: MIT
+metadata:
+  author: 小乖（李渔樵团队）
+  version: 1.2.0
 triggers:
   - 智能体健康
   - Agent诊断
