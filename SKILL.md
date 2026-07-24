@@ -5,14 +5,16 @@ license: MIT
 metadata:
   author: 小乖（李渔樵团队）
   version: 1.2.0
-triggers:
-  - 智能体健康
-  - Agent诊断
-  - pipixia
-  - 皮皮虾
 ---
 
 # 皮皮虾医生v5.1
+
+## 触发条件
+
+- 智能体健康
+- Agent诊断
+- pipixia
+- 皮皮虾
 
 ## Sandbox Repair Context（v1.2.0）
 
